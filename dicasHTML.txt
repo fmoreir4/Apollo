@@ -1,0 +1,11 @@
+//click e video
+<div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+	<!-- Wrapper for slides -->
+	<div role="listbox" class="carousel-inner">
+		<div class="item active pointer">
+			<!--a href="https://www.youtube.com/embed/hyCrd0x2yGg?rel=0"-->
+			<img id="img1" alt="..." src="img/base/001.jpg"S>
+			<!--/a-->
+		</div>
+	</div>
+</div>
