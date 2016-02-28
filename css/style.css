@@ -1,11 +1,12 @@
 @charset "utf-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
 
-/*PADROES*/
+/* PADROES */
 *{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    text-align: justify;
 }
 
 .vermelho {
@@ -27,25 +28,45 @@
 .bgAzul{
     background-color: rgba(0, 0, 128, 0.9);
 }
+
+.fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999999;
+}
+/* ESTRUTURA */
 body{
     position: relative;
+    top:0;
 }
 
-.caps, h2{
-    text-transform: uppercase;
-    font-weight: 500;
+footer{
+    height: 100%;
+    min-height: 200px;
 }
 
-/* Logo */
+
+/* LOGO */
 .first-line{
     background-image: url("../img/bgtopo-base2.png");
 }
 
-/* Conteudo */
+
+/* CONTEUDO */
 .conteudo{
     padding-top: 30px;
     padding-bottom: 30px;
     color: #222;
+    font-size: 1.2em;
+}
+
+.titulos{
+    letter-spacing: -2px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 41px !important
 }
 
 .well{
@@ -58,6 +79,28 @@ body{
     vertical-align: middle;
 }
 
+.caps, h2{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.fotoProjeto{
+    width: 100%;
+}
+
+.textoProjeto {
+	padding: 0 10px;
+}
+
+.vBarra{
+    border-right: solid 1px #aaa;
+}
+
+.lista{
+    list-style: inside square;
+    margin-left: 10px;
+}
+
 /* CARROSEL */
 .carousel-caption {
     float: right;
@@ -67,7 +110,7 @@ body{
 }
 
 .fotosCarrossel{
-    height: 400px;
+    height: 500px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -78,15 +121,16 @@ body{
     position: relative;
     top: 20px;
     width: 100%;
-    max-width: 310px;
+    min-width: 310px;
+    max-width: 600px;
     height: auto;
-    padding: 5px;
+    padding: 0 20px;
     color: #fff;
     background-color: rgba(10, 10, 51, 0.7);
     text-shadow: 0 0 1px #fff;
 }
 
-footer{
-    height: 100%;
-    min-height: 400px;
+.clearfix {
+    clear: both;
+    float: none;
 }
