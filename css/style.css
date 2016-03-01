@@ -29,6 +29,14 @@
     background-color: rgba(0, 0, 128, 0.9);
 }
 
+.bgBranco {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bgCinza {
+    background-color: rgba(160, 160, 160, 0.6);
+}
+
 .fixed{
     position: fixed;
     top: 0;
@@ -36,6 +44,8 @@
     width: 100%;
     z-index: 999999;
 }
+
+
 /* ESTRUTURA */
 body{
     position: relative;
@@ -56,17 +66,18 @@ footer{
 
 /* CONTEUDO */
 .conteudo{
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
     color: #222;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .titulos{
-    letter-spacing: -2px;
-    margin-top: 0;
+    letter-spacing: 2px;
+    margin: 0;
     text-align: center;
-    font-size: 41px !important
+    font-size: 40px;
+    text-shadow: 0px 0px 2px;
 }
 
 .well{
@@ -74,18 +85,15 @@ footer{
     border: none;
 }
 
-.vcenter{
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .caps, h2{
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .fotoProjeto{
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .textoProjeto {
@@ -100,6 +108,12 @@ footer{
     list-style: inside square;
     margin-left: 10px;
 }
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
 
 /* CARROSEL */
 .carousel-caption {
@@ -130,7 +144,25 @@ footer{
     text-shadow: 0 0 1px #fff;
 }
 
-.clearfix {
-    clear: both;
-    float: none;
+
+/* FUNDOS */
+#ensino, #tecnico, #projetos, #contatos{
+    background-size: cover;
+    border-top: outset 2px;
+}
+
+#ensino{
+    background-image: url("../img/base/bgEnsino.jpg");
+}
+
+#tecnico{
+    background-image: url("../img/base/bgTecnico.jpg");
+}
+
+#projetos{
+    background-image: url("../img/base/bgProjetos.jpg");
+}
+
+#contatos{
+    background-image: url("../img/base/mapaContatos.jpg");
 }
