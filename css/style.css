@@ -63,15 +63,21 @@ footer{
     background-image: url("../img/bgtopo-base2.png");
 }
 
+.second-line {
+	margin-bottom: -20px;
+}
 
 /* CONTEUDO */
 .conteudo{
-    padding-top: 20px;
-    padding-bottom: 30px;
     color: #222;
     font-size: 1.3em;
 }
-
+.divisor{
+    padding-top: 0px;
+    padding-top: 0px;
+    margin-top:  40px;
+    margin-bottom: 40px;
+}
 .titulos{
     letter-spacing: 2px;
     margin: 0;
